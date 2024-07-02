@@ -1,0 +1,142 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="header">
+      <a class="logo" href="#">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="h-6 w-6"
+        >
+          <path
+            d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"
+          ></path>
+          <path
+            d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"
+          ></path>
+          <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
+          <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
+        </svg>
+        <span class="sr-only">WAGMI</span>
+      </a>
+      <nav class="nav">
+        <a href="#about"> About </a>
+        <a href="#plans"> plans </a>
+      </nav>
+    </header>
+    <main>
+      <section id="about" class="about">
+        <div class="container">
+          <h1 class="heading-1">About Me</h1>
+          <div class="profile">
+            <img
+              data-testid="slackProfilePicture"
+              src="dp-sm.jpeg"
+              alt="Profile"
+            />
+            <div class="profile-details">
+              <div>
+                Slack Name:
+                <span data-testid="slackDisplayName">Bonaventure</span>
+              </div>
+              <div>
+                Email:
+                <span data-testid="slackEmail">ezeaniiandrew@gmail.com</span>
+              </div>
+              <div>
+                Current Time (UTC):
+                <span data-testid="currentTimeUTC" id="time"></span>
+              </div>
+              <div>
+                Current Day:
+                <span data-testid="currentDay" id="day"></span>
+              </div>
+            </div>
+          </div>
+          <p class="sub-text">
+            I'm a passionate technologist with a deep fascination for a better
+            future for myself and the worldat large. My background is in
+            Architextural science but I've spent the last few years learning
+            about frontend development. I'm driven by a desire to push the
+            boundaries of what's possible and to create solutions that can
+            positively impact the world around me.
+          </p>
+        </div>
+      </section>
+      <section id="plans" class="goals">
+        <div class="goals-container">
+          <div class="space-y-4 text-center">
+            <h2 class="heading-2">My Plans</h2>
+            <p class="sub-text">
+              Over the next two years, I'm committed to achieving my plans that
+              will propel me towards a more better future.
+            </p>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3>Be better at testing</h3>
+              <p>
+                I aim to improve my skills in writing effective tests for my
+                React applications, ensuring better code quality and
+                reliability.
+              </p>
+            </div>
+            <div class="card">
+              <h3>Increase my React knowledge</h3>
+              <p>
+                I plan to dive deeper into the React ecosystem, learning
+                advanced concepts, best practices, and emerging technologies to
+                become a mo
+              </p>
+            </div>
+            <div class="card">
+              <h3>Give a talk at a tech conference</h3>
+              <p>
+                I want to share my knowledge and experience with the wider tech
+                community by giving a talk at a reputable tech conference.
+              </p>
+            </div>
+            <div class="card">
+              <h3>Get a remote job</h3>
+              <p>
+                My goal is to secure a remote position that allows me to work
+                from anywhere, providing me with the flexibility and work-life
+                balance I desire.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="text-center">
+      <p>© 2024 Andrew Ezeani. All rights reserved</p>
+      <div>
+        <a data-testid="hngLink" href="http://hng.tech/learn" target="_blank"
+          >HNG courses</a
+        >
+        <a data-testid="keywordLink" href="http://keyword.dog" target="_blank"
+          >SEO optimization tool</a
+        >
+        <a
+          data-testid="scrapeanywebLink"
+          href="http://scrapeanyweb.site"
+          target="_blank"
+          >Web scraper</a
+        >
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
